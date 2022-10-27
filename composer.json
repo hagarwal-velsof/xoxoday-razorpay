@@ -1,0 +1,10 @@
+{
+    "name": "xoxoday/razorpay",
+    "description": "This package contains API for XOXO RazorPay integration",
+    "autoload": {
+        "psr-4": {
+            "Xoxoday\\Razorpay\\": "src/"
+        }
+    },
+    "require": {}
+}
