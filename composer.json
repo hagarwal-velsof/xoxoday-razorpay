@@ -6,5 +6,12 @@
             "Xoxoday\\Razorpay\\": "src/"
         }
     },
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xoxoday\\Razorpay\\RazorPayServiceProvider"
+            ]
+        }
+    }
 }

@@ -1,7 +1,6 @@
 <?php
 namespace App\Http\Controllers;
 use Xoxoday\Razorpay\Razorpay;
-use App\Jobs\RazorPayout;
 
 class TestController extends Controller
 {
@@ -14,8 +13,6 @@ class TestController extends Controller
     $razor = new Razorpay();
     $request_id = $razor->createRazorPayout($data);
 
-    //Creates payout for the given user data
-    dispatch(new RazorPayout($request_id));
-    die('__');
+
   }
 }
