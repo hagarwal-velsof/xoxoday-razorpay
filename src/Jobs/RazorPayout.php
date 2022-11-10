@@ -149,7 +149,7 @@ class RazorPayout implements ShouldQueue
             'Content-type' => 'application/json',
         ])->post($url, $data);
 
-        if ($response->status() == 200) {
+        if ($response->status() == 200 || $response->status() == 201) {
             $result = json_decode(json_encode($response->object()), true);
             if (isset($result['id'])) {
                 return  $result['id'];
